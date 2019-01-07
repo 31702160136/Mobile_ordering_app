@@ -1,0 +1,23 @@
+export default{
+	state:{
+		openid:"",
+		table:"",
+		num_prople:0,
+		way:"堂吃"
+	},
+	mutations:{
+		setNumProple(state,num){
+			state.num_prople=num;
+		},
+		setWay(state,way){
+			if(way===0){
+				state.way='堂吃';
+			}else{
+				state.way='外带';
+			}
+		},
+		setOpenid(state,id){
+			state.openid=id;
+		}
+	}
+};
